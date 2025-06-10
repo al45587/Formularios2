@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colores</title>
+    <style>
+        .clave-color{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: block;
+
+        }
+        .div{
+
+            width: 200px;
+            height: 200px;
+            background-color: #aaa;
+            display: inline;
+            display: inline-block;
+        }
+        .clasehsl{
+            width: 200px;
+            height: 200px;
+background-color: hsl(145, 77%, 43%);
+display: table-cell;
+        }
+        .transparencia{
+            width: 250px;
+            height: 250px;
+            background-color: transparent;
+            background-color: #1b1ead;
+            background-color: hsl(44, 89%, 48%);
+            background-color: hsl(295, 77%, 43%);
+            position: relative;
+               left: 300px;
+        }
+
+        .transparencia1{
+            width: 250px;
+            height: 250px;
+            background-color: transparent;
+            background-color: #1b1ead;
+            background-color: hsl(44, 89%, 48%);
+            background-color: hsl(295, 77%, 43%);
+            position: fixed;
+               right: 100px;
+               top: 200px;
+        }
+
+        .transparencia2{
+            width: 250px;
+            height: 250px;
+            background-color: transparent;
+            background-color: #1b1ead;
+            background-color: hsl(44, 89%, 48%);
+            background-color: hsl(295, 77%, 43%);
+            position: absolute;
+               right: 50px;}
+
+        .degradado1{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient( blue, green, red, orange);
+
+        }
+        .degradado2{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient( blue, green, red, orange);
+            float: left;
+        }
+        .degradado3{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient( blue, green, red, orange);
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>ELEMENTOS EN BLOQUE</h1>
+    <div class="clave-color"> UNO</div>
+    <br>
+    <div class="clave-color"> DOS</div>
+    <br>
+    <div class="clave-color"> TRES</div>
+    <br>
+    <div class="clave-color"> CUATRO</div>
+    <br>
+    <br>
+    <div>
+Aplicar color
+    </div>
+    <h1>ELEMENTOS EN LÍNEA</h1>
+    <div class="div">UNO</div>
+    <div class="div">DOS</div>
+    <div class="div">TRES</div>
+    <div class="div">CUATRO</div>
+
+    <br>
+    <h1>ELEMENTOS EN TABLA</h1>
+    <div class="clasehsl">UNO</div>
+    <div class="clasehsl">DOS</div>
+    <div class="clasehsl">TRES</div>
+    <div class="clasehsl">CUATRO</div>
+
+    <br>
+    <h1>POSICIONAMIENTO</h1>
+    <div class="transparencia">RELATIVO</div>
+    <div class="transparencia1">FIJO</div>
+    <div class="transparencia2">ABSOLUTO</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>POSICINAMIENTO FLOTANTE</h1>
+    <div class="degradado2">PRIMERO</div>
+    <div class="degradado2">SEGUNDO</div>
+    <div class="degradado3">TERCERO</div>
+    <div></div>
+    <br>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+</body>
+</html>
