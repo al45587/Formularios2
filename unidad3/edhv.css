@@ -1,0 +1,57 @@
+body{
+color: black;
+background: white;
+}
+
+.grid{
+    width: 90%;
+    max-width: 100%;
+    margin: 30px auto;
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header headrer"
+                         "contenido contenido sidebar"
+                         "widget1 widget2  sidebar"
+                         "footer footer footer";
+}
+.grid div,
+.grid header,
+.grid aside,
+.grid footer{
+    background: white;
+    padding: 20px;
+}
+
+.grid header{
+    background: grey;
+    color: white;
+    grid-area: header;
+}
+
+.grid contenido{
+    grid-area: contenido;
+}
+
+.grid aside{
+    background: pink;
+    color: white;
+    grid-area: sidebar;
+}
+
+.grid .widget{
+    background: lightblue;
+    color: white;
+
+}
+
+.grid .w1{
+    grid-area: widget1;
+}
+
+.grid .w2{
+    grid-area: widget2;
+}
